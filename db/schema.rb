@@ -31,12 +31,13 @@ ActiveRecord::Schema.define(version: 2021_02_04_203345) do
   end
 
   create_table "join_strolls", force: :cascade do |t|
-    t.integer "id_stroll"
+    t.integer "id_stroll_id"
     t.integer "id_dog"
     t.integer "id_dogsitter"
     t.integer "id_city"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["id_stroll_id"], name: "index_join_strolls_on_id_stroll_id"
   end
 
   create_table "strolls", force: :cascade do |t|

@@ -1,3 +1,5 @@
+#mise en place rapide d'un dogsitter
+
 class CreateDogsitters < ActiveRecord::Migration[6.1]
   def change
     create_table :dogsitters do |t|

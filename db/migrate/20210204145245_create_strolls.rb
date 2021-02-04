@@ -1,3 +1,5 @@
+#mise en place rapide d'une stroll
+
 class CreateStrolls < ActiveRecord::Migration[6.1]
   def change
     create_table :strolls do |t|

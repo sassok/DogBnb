@@ -1,3 +1,5 @@
+#mise en place rapide d'une ville
+
 class CreateCities < ActiveRecord::Migration[6.1]
   def change
     create_table :cities do |t|
