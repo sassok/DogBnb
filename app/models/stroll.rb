@@ -1,4 +1,4 @@
 class Stroll < ApplicationRecord
-    has_many :dogs, through: :strolls
-    belongs_to :dogsitter
+    has_many :dogsitter
+    has_many :dogs, through: :join_strolls
 end
